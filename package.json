@@ -1,19 +1,19 @@
 {
-  "name": "uf-hope",
+  "name": "unlikelyfighters",
   "version": "0.0.1",
-  "description": "unlikely fighters site",
-  "main": "main.js",
+  "description": "",
+  "engines": {
+    "npm": "3.5.3",
+    "node": "5.4.1"
+  },
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pattishin/uf-hope.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pattishin/uf-hope/issues"
-  },
-  "homepage": "https://github.com/pattishin/uf-hope#readme"
+  "dependencies": {
+    "pg": "^6.0.3",
+    "cool-ascii-faces": "1.3.4",
+    "ejs": "2.4.1",
+    "express": "4.13.3"
+  }
 }
