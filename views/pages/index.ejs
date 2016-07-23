@@ -4,47 +4,65 @@
     <% include ../partials/header.ejs %>
   </head>
   <body>
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner">
-        <div class="cover-container">
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Unlikely Fighters</h3>
-              <nav>
-              <ul class="nav masthead-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-              </nav>
+    <div class="top-bar">
+      <div class="row">
+        <div class="top-bar-left">
+          <ul class="menu">
+            <li class="menu-text">Unlikely Fighters</li>
+          </ul>
+        </div>
+        <div class="top-bar-right"></div>
+      </div>
+    </div>
+    <div class="app-content off-canvas-wrapper">
+      <div class="off-canvas-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-right reveal-for-large"></div>
+        <div class="off-canvas-content" data-off-canvas-content>
+          <div class="title-bar hide-for-large"></div>
+          <div class="callout primary">
+            <div class="row">
+              <h1>Unlikely Fighters</h1>
+              <p class="lead">Dare to fight!</p>
+              <a href="#" class="button">Origins</a>
             </div>
           </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Dare to fight.</h1>
-            <p class="lead">
-            #Group of artists who support the underdogs, the weak ... the unlikely fighters.
-            </p>
-            <p class="lead">
-            <a href="#" class="btn btn-lg btn-default">Learn more</a>
-            </p>
+          <div class="row small-up-2 medium-up-3 large-up-4">
+            <div class="column">
+              <img class="thumbnail" src="http://placehold.it/550x550">
+            </div>
+            <div class="column">
+              <img class="thumbnail" src="http://placehold.it/550x550">
+            </div>
+            <div class="column">
+              <img class="thumbnail" src="http://placehold.it/550x550">
+            </div>
+            <div class="column">
+              <img class="thumbnail" src="http://placehold.it/550x550">
+            </div>
+            <div class="column">
+              <img class="thumbnail" src="http://placehold.it/550x550">
+            </div>
+            <div class="column">
+              <img class="thumbnail" src="http://placehold.it/550x550">
+            </div>
+            <div class="column">
+              <img class="thumbnail" src="http://placehold.it/550x550">
+            </div>
+            <div class="column">
+              <img class="thumbnail" src="http://placehold.it/550x550">
+            </div>
           </div>
-          <div id="content"></div>
+        </div>
+        <div class="row small-up-2 medium-up-3 large-up-4">
+          <div id="content" class="row"></div>
           <form id="checkout" method="post" action="/checkout">
             <div id="payment-form"></div>
-            <input type="submit" value="Pay $10">
+            <input type="submit" value="Pay $10" class="button">
           </form>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>@tinkertwins</p>
-            </div>
-          </div>
         </div>
       </div>
     </div>
     
     <% include ../partials/footer.ejs %>
-    
   </body>
 </html>
